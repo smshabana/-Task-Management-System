@@ -1,0 +1,13 @@
+sh: 
+
+mvn archetype:generate -DgroupId=com.taskmanager -DartifactId=task-manager -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+
+
+spring.datasource.url=jdbc:mysql://localhost:3306/taskdb
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+spring.jpa.hibernate.ddl-auto=update
+
+
+mvn spring-boot:run
